@@ -32,6 +32,6 @@
 * Part 2 of the assignment requires that we extract mean and standard deviation only. That's stored in `mean_and_std`.
 * Part 3 of the assignment requires that we use descriptive activity names. That's stored in `activities`.
 * Part 4 of the assignment requires that we use descriptive variable names. That's stored in `activities` and its content is written to `./results/activities.csv`.
-* Part 5 of the assignment requires that we take the mean of all variables, after they're grouped into subject and activity. That's stored in `activity_means` and its content is written to `./results/activity_means.txt`.
+* Part 5 of the assignment requires that we take the mean of all variables, after they're grouped into subject and activity. That's stored in `activity_means` and its content is written to `./results/activity_means.txt` and `./results/activity_means.csv`.
 
 

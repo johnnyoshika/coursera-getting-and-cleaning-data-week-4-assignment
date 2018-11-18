@@ -50,4 +50,9 @@ activites_by_subject_and_activity <- split(activities, split_by, drop = TRUE)
 activity_means <- sapply(activites_by_subject_and_activity, function(x) colMeans(x[,-ncol(x)]))
 # activity_means now shows features as rows and groups as columns, so switch them around
 activity_means <- t(activity_means)
+# get activity names from row names
+activity_name <- sapply(row.names(activity_means), function(x) unlist(strsplit(x, "\\."))[2])
+# put activity_name back into activity_means
+activity_means <- cbind(activity_name, activity_means)
 write.csv(activity_means, file = "./results/activity_means.csv")
+write.table(activity_means, file = "./results/activity_means.txt", row.name=FALSE)
